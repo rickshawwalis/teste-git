@@ -1,0 +1,625 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 17605
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 16 Tf
+18.3999999999999986 TL
+0 g
+28.3464566929133888 813.5435433070865656 Td
+(Human:) Tj
+T* (o que exatamente esse algoritmo faz?) Tj
+T* () Tj
+T* () Tj
+T* (function adicionaTarefasSalvas\(\) {) Tj
+T* (    const tarefas = localStorage.getItem\('caixaCursos'\);) Tj
+T* (    const listaDeTarefas = JSON.parse\(tarefas\);) Tj
+T* () Tj
+T* (    for \(let tarefa of listaDeTarefas\) {) Tj
+T* (        criarNovoCurso\(tarefa\);) Tj
+T* (    }) Tj
+T* (}) Tj
+T* (adicionaTarefasSalvas\(\);) Tj
+T* () Tj
+T* () Tj
+T* (AI:) Tj
+T* (Esse algoritmo adiciona tarefas salvas em um armazenamento local) Tj
+T* (\(localStorage\) a uma lista de tarefas exibida na interface de usuário.O) Tj
+T* (código começa definindo uma função chamada "adicionaTarefasSalvas",) Tj
+T* (que começa obtendo as tarefas salvas do armazenamento local usando o) Tj
+T* (método "getItem" do objeto "localStorage". O valor retornado por "getItem" é) Tj
+T* (uma string, que é então convertida em um objeto JavaScript usando a) Tj
+T* (função "JSON.parse" e armazenada na variável "listaDeTarefas".Em) Tj
+T* (seguida, o código usa um loop "for-of" para percorrer cada tarefa na lista de) Tj
+T* (tarefas \(armazenada em "listaDeTarefas"\) e chama a função) Tj
+T* ("criarNovoCurso" para criar um novo curso com as informações da) Tj
+T* (tarefa.Por fim, a função "adicionaTarefasSalvas" é chamada para executar o) Tj
+T* (código e adicionar as tarefas salvas à lista de tarefas exibida na interface de) Tj
+T* (usuário.) Tj
+T* () Tj
+T* (Human:) Tj
+T* (no caso se eu atualizar a pagina, os dados continuarão lá?) Tj
+T* () Tj
+T* (AI:) Tj
+T* (Se as tarefas foram salvas corretamente no armazenamento local, elas) Tj
+T* (devem permanecer lá mesmo se você atualizar a página. Isso ocorre) Tj
+T* (porque o armazenamento local é uma forma de armazenar dados no) Tj
+T* (navegador do usuário, permitindo que as informações persistam mesmo) Tj
+T* (após a página ser atualizada ou o navegador ser fechado.Ao chamar a) Tj
+T* (função "localStorage.getItem" para obter as tarefas salvas, o código está) Tj
+T* (buscando por dados que foram previamente armazenados pelo usuário em) Tj
+T* (seu navegador, e esses dados permanecerão disponíveis mesmo que a) Tj
+T* (página seja atualizada. Porém, é importante notar que se o usuário limpar o) Tj
+T* (cache do navegador ou usar outro navegador ou dispositivo para acessar a) Tj
+T* (página, as tarefas salvas não estarão mais disponíveis.) Tj
+T* () Tj
+T* (Human:) Tj
+T* (e esse algoritmo aqui faz o que?) Tj
+T* (// function salvarTarefas\(\) {) Tj
+T* (//     const liTarefas = caixaCursos.querySelectorAll\('.curso'\);) Tj
+T* (//     const listaDeTarefas = [];) Tj
+T* () Tj
+T* (//     for \(let tarefa of liTarefas\) {) Tj
+T* (//         let tarefaTexto = tarefa.innerText;) Tj
+T* (//         listaDeTarefas.push\(tarefaTexto\);) Tj
+T* (//     }) Tj
+T* () Tj
+T* (//     const tarefasJSON = JSON.stringify\(listaDeTarefas\);) Tj
+T* (//     localStorage.setItem\('caixaCursos', tarefasJSON\);) Tj
+T* (// }) Tj
+T* () Tj
+T* () Tj
+T* (AI:) Tj
+T* (Esse algoritmo salva as tarefas que foram adicionadas à lista de cursos) Tj
+T* (exibida na interface de usuário em um armazenamento local \(localStorage\),) Tj
+T* (para que possam ser recuperadas e exibidas posteriormente, mesmo após) Tj
+T* (o usuário fechar a página.A função "salvarTarefas" começa selecionando) Tj
+T* (todos os elementos "li" que representam as tarefas na lista de cursos,) Tj
+T* (usando o método "querySelectorAll" do objeto "caixaCursos" \(que deve ser) Tj
+T* (uma referência ao elemento HTML que contém a lista de cursos\).Em) Tj
+T* (seguida, a função cria um array vazio chamado "listaDeTarefas". Em um) Tj
+T* (loop "for-of", a função percorre cada elemento "li" encontrado na etapa) Tj
+T* (anterior, extrai o texto de cada elemento usando a propriedade "innerText" e) Tj
+T* (adiciona esse texto ao array "listaDeTarefas" usando o método) Tj
+T* ("push".Depois de obter todas as tarefas da lista e adicioná-las ao array) Tj
+T* ("listaDeTarefas", a função usa a função "JSON.stringify" para converter o) Tj
+T* (array em uma string JSON, que pode ser armazenada no armazenamento) Tj
+T* (local.Por fim, a função usa o método "setItem" do objeto "localStorage" para) Tj
+T* (salvar a string JSON contendo as tarefas na chave "caixaCursos". Dessa) Tj
+T* (forma, quando a função "adicionaTarefasSalvas" \(descrita na pergunta) Tj
+T* (anterior\) é chamada, ela pode recuperar essas tarefas salvas usando o) Tj
+T* (método "getItem" e exibi-las novamente na lista de cursos.) Tj
+T* () Tj
+T* (Human:) Tj
+T* (qual a diferença desse algoritmo para o primeiro q eu mandei?) Tj
+T* () Tj
+T* (AI:) Tj
+T* (Os dois algoritmos estão relacionados, mas têm propósitos diferentes.O) Tj
+T* (primeiro algoritmo, que é executado quando a página é carregada, recupera) Tj
+T* (as tarefas previamente salvas do armazenamento local e adiciona essas) Tj
+T* (tarefas à lista de cursos exibida na interface do usuário.Já o segundo) Tj
+T* (algoritmo, que é executado quando o usuário adiciona ou remove uma) Tj
+T* (tarefa da lista de cursos, salva as tarefas atualmente exibidas na lista no) Tj
+T* (armazenamento local, para que elas possam ser recuperadas e exibidas) Tj
+T* (novamente na próxima vez que o usuário acessar a página.Em resumo, o) Tj
+T* (primeiro algoritmo tem como objetivo recuperar tarefas salvas e exibi-las na) Tj
+T* (interface do usuário, enquanto o segundo algoritmo tem como objetivo) Tj
+T* (salvar as tarefas atualmente exibidas pelo usuário para que elas possam) Tj
+T* (ser recuperadas posteriormente.) Tj
+T* () Tj
+T* (Human:) Tj
+T* (contem erro nesse codigo?) Tj
+T* () Tj
+T* (const cursos = [];) Tj
+T* (const caixaCursos = document.querySelector\("#caixaCursos"\);) Tj
+T* (const btnAdicionarAntes =) Tj
+T* (document.getElementById\("btnAdicionarNovoCurso"\);) Tj
+T* (const btnAdicionarDepois =) Tj
+T* (document.getElementById\("btnAdicionarDepois"\);) Tj
+T* (const btnCursoSelecionado =) Tj
+T* (document.getElementById\("btnCursoSelecionado"\);) Tj
+T* (const btnRemoverCurso = document.getElementById\("btnRemoverCurso"\);) Tj
+T* () Tj
+T* (const nomeCurso = document.querySelector\("#nomeCurso"\);) Tj
+T* (cursos.push\("Inicio" + nomeCurso.value\)) Tj
+T* () Tj
+T* (let indice = 0;) Tj
+T* () Tj
+T* (const criarNovoCurso = \(curso\) => {) Tj
+T* (    indice++//faz o id do novoElemento ser diferente um do outro) Tj
+T* (    const novoElemento = document.createElement\("div"\);) Tj
+T* (    novoElemento.setAttribute\("id", "c" + indice\);) Tj
+T* (    novoElemento.setAttribute\("class", "curso c1"\);) Tj
+T* (    novoElemento.innerHTML = curso;) Tj
+T* (    caixaCursos.appendChild\(novoElemento\);) Tj
+T* () Tj
+T* (    const comandos = document.createElement\("div"\);) Tj
+T* (    comandos.setAttribute\("class", "comandos"\);) Tj
+T* (    novoElemento.appendChild\(comandos\)) Tj
+T* () Tj
+T* (    const rb = document.createElement\("input"\);//cria o input radio) Tj
+T* (    rb.setAttribute\("type", "radio"\);) Tj
+T* (    rb.setAttribute\("name", "rb_curso"\);) Tj
+T* (    comandos.appendChild\(rb\);) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (    return novoElemento) Tj
+T* (}) Tj
+T* () Tj
+T* (cursos.map\(\(el\) => {) Tj
+T* (    const novoElemento = criarNovoCurso\(el\)) Tj
+T* (}\)) Tj
+T* () Tj
+T* (const radioSelecionado = \(\) => {//seleciona o input radio) Tj
+T* (    const todosRadios = [...document.querySelectorAll\("input[type=radio]"\)];) Tj
+T* (    const radioSelecionado = todosRadios.filter\(\(ele\) => {) Tj
+T* (        return ele.checked) Tj
+T* (    }\)) Tj
+T* (    return radioSelecionado[0]) Tj
+T* (}) Tj
+T* () Tj
+T* (btnCursoSelecionado.addEventListener\("click", \(\) => {//seleciona ao clicar) Tj
+T* (no input radio) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try { //usando try-catch caso não seja selecionado nada) Tj
+T* (        const cursoSelecionado = rs.parentNode.previousSibling.textContent;) Tj
+T* (        alert\("Curso Selecionado: " + cursoSelecionado\);) Tj
+T* (    } catch \(exc\) {) Tj
+T* (        alert\("Selecione um curso"\);) Tj
+T* (    }) Tj
+T* (}\)) Tj
+T* () Tj
+T* (btnRemoverCurso.addEventListener\("click", \(\) => {//remove ao clicar no) Tj
+T* (input radio) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    if \(rs != undefined\) { //usando if - else caso não seja selecionado nada) Tj
+T* (        const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (        cursoSelecionado.remove\(\);) Tj
+T* (    } else {) Tj
+T* (        alert\("Selecione um curso"\);) Tj
+T* (    }) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (}\)) Tj
+T* () Tj
+T* (btnAdicionarAntes.addEventListener\("click", \(evt\) => {) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try {) Tj
+T* (        if \(nomeCurso.value != ""\) {) Tj
+T* (            const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (            const novoCurso = criarNovoCurso\(nomeCurso.value\);) Tj
+T* (            caixaCursos.insertBefore\(novoCurso, cursoSelecionado\)) Tj
+T* (        } else {) Tj
+T* (            alert\("Digite o nome do curso!"\)) Tj
+T* (        }) Tj
+T* (    } catch \(ex\) {) Tj
+T* (        alert\("Selecione um curso"\)) Tj
+T* (    }) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (}\);) Tj
+T* () Tj
+T* (btnAdicionarDepois.addEventListener\("click", \(evt\) => {) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try {) Tj
+T* (        if \(nomeCurso.value != ""\) {) Tj
+T* (            const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (            const novoCurso = criarNovoCurso\(nomeCurso.value\);) Tj
+T* (            caixaCursos.insertBefore\(novoCurso, cursoSelecionado.nextSibling\)) Tj
+T* (        } else {) Tj
+T* (            alert\("Digite o nome do curso!"\)) Tj
+T* (        }) Tj
+T* (    } catch \(ex\) {) Tj
+T* (        alert\("Selecione um curso"\)) Tj
+T* (    }) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (}\);) Tj
+T* () Tj
+T* (function salvarTarefas\(\) {) Tj
+T* (    const liTarefas = caixaCursos.querySelectorAll\('.curso'\);) Tj
+T* (    const listaDeTarefas = [];) Tj
+T* () Tj
+T* (    for \(let tarefa of liTarefas\) {) Tj
+T* (        let tarefaTexto = tarefa.innerText;) Tj
+T* (        listaDeTarefas.push\(tarefaTexto\);) Tj
+T* (    }) Tj
+T* () Tj
+T* (    const tarefasJSON = JSON.stringify\(listaDeTarefas\);) Tj
+T* (    localStorage.setItem\('caixaCursos', tarefasJSON\);) Tj
+T* (}) Tj
+T* () Tj
+T* () Tj
+T* (function adicionaTarefasSalvas\(\) {) Tj
+T* (    const tarefas = localStorage.getItem\('curso'\);) Tj
+T* (    const listaDeTarefas = JSON.parse\(tarefas\);) Tj
+T* () Tj
+T* (    for \(let tarefa of listaDeTarefas\) {) Tj
+T* (        criarNovoCurso\(tarefa\);) Tj
+T* (    }) Tj
+T* (}) Tj
+T* (adicionaTarefasSalvas\(\);) Tj
+T* () Tj
+T* () Tj
+T* (AI:) Tj
+T* (Existem alguns problemas no código apresentado:Na linha 8, o id) Tj
+T* ("btnAdicionarNovoCurso" não está definido em nenhum lugar, então o) Tj
+T* (elemento "btnAdicionarAntes" será nulo.Na linha 10, o id) Tj
+T* ("btnAdicionarDepois" não está definido em nenhum lugar, então o elemento) Tj
+T* ("btnAdicionarDepois" será nulo.Na linha 11, o id "btnCursoSelecionado" não) Tj
+T* (está definido em nenhum lugar, então o elemento "btnCursoSelecionado") Tj
+T* (será nulo.Na linha 12, o id "btnRemoverCurso" não está definido em) Tj
+T* (nenhum lugar, então o elemento "btnRemoverCurso" será nulo.Na linha 14,) Tj
+T* (o array "cursos" é inicializado vazio e na linha 15 um curso é adicionado.) Tj
+T* (Isso não tem muito sentido, pois seria mais fácil inicializar o array com o) Tj
+T* (curso já adicionado.Na linha 44, a função adicionaTarefasSalvas\(\) usa o) Tj
+T* (método localStorage.getItem\('curso'\), mas deveria usar o método) Tj
+T* (localStorage.getItem\('caixaCursos'\), que é o mesmo nome usado na função) Tj
+T* (salvarTarefas\(\) para salvar as informações.O código poderia se beneficiar) Tj
+T* (de uma melhor organização, como separar as funções em arquivos) Tj
+T* (diferentes e evitar a mistura de lógica e apresentação.) Tj
+T* () Tj
+T* (Human:) Tj
+T* (corrigi?) Tj
+T* () Tj
+T* (AI:) Tj
+T* (Sim, a correção ficou assim:javascriptCopy codeconst cursos = [];) Tj
+T* (const caixaCursos = document.querySelector\("#caixaCursos"\);) Tj
+T* (const btnAdicionarAntes =) Tj
+T* (document.getElementById\("btnAdicionarNovoCurso"\);) Tj
+T* (const btnAdicionarDepois =) Tj
+T* (document.getElementById\("btnAdicionarDepois"\);) Tj
+T* (const btnCursoSelecionado =) Tj
+T* (document.getElementById\("btnCursoSelecionado"\);) Tj
+T* (const btnRemoverCurso = document.getElementById\("btnRemoverCurso"\);) Tj
+T* () Tj
+T* (const nomeCurso = document.querySelector\("#nomeCurso"\);) Tj
+T* (cursos.push\("Inicio" + nomeCurso.value\)) Tj
+T* () Tj
+T* (let indice = 0;) Tj
+T* () Tj
+T* (const criarNovoCurso = \(curso\) => {) Tj
+T* (    indice++//faz o id do novoElemento ser diferente um do outro) Tj
+T* (    const novoElemento = document.createElement\("div"\);) Tj
+T* (    novoElemento.setAttribute\("id", "c" + indice\);) Tj
+T* (    novoElemento.setAttribute\("class", "curso c1"\);) Tj
+T* (    novoElemento.innerHTML = curso;) Tj
+T* (    caixaCursos.appendChild\(novoElemento\);) Tj
+T* () Tj
+T* (    const comandos = document.createElement\("div"\);) Tj
+T* (    comandos.setAttribute\("class", "comandos"\);) Tj
+T* (    novoElemento.appendChild\(comandos\)) Tj
+T* () Tj
+T* (    const rb = document.createElement\("input"\);//cria o input radio) Tj
+T* (    rb.setAttribute\("type", "radio"\);) Tj
+T* (    rb.setAttribute\("name", "rb_curso"\);) Tj
+T* (    comandos.appendChild\(rb\);) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (    return novoElemento) Tj
+T* (}) Tj
+T* () Tj
+T* (cursos.map\(\(el\) => {) Tj
+T* (    const novoElemento = criarNovoCurso\(el\)) Tj
+T* (}\)) Tj
+T* () Tj
+T* (const radioSelecionado = \(\) => {//seleciona o input radio) Tj
+T* (    const todosRadios = [...document.querySelectorAll\("input[type=radio]"\)];) Tj
+T* (    const radioSelecionado = todosRadios.filter\(\(ele\) => {) Tj
+T* (        return ele.checked) Tj
+T* (    }\)) Tj
+T* (    return radioSelecionado[0]) Tj
+T* (}) Tj
+T* () Tj
+T* (btnCursoSelecionado.addEventListener\("click", \(\) => {//seleciona ao clicar) Tj
+T* (no input radio) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try { //usando try-catch caso não seja selecionado nada) Tj
+T* (        const cursoSelecionado = rs.parentNode.previousSibling.textContent;) Tj
+T* (        alert\("Curso Selecionado: " + cursoSelecionado\);) Tj
+T* (    } catch \(exc\) {) Tj
+T* (        alert\("Selecione um curso"\);) Tj
+T* (    }) Tj
+T* (}\)) Tj
+T* () Tj
+T* (btnRemoverCurso.addEventListener\("click", \(\) => {//remove ao clicar no) Tj
+T* (input radio) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    if \(rs != undefined\) { //usando if - else caso não seja selecionado nada) Tj
+T* (        const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (        cursoSelecionado.remove\(\);) Tj
+T* (    } else {) Tj
+T* (        alert\("Selecione um curso"\);) Tj
+T* (    }) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (}\)) Tj
+T* () Tj
+T* (btnAdicionarAntes.addEventListener\("click", \(evt\) => {) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try {) Tj
+T* (        if \(nomeCurso.value != ""\) {) Tj
+T* (            const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (            const novoCurso = criarNovoCurso\(nomeCurso.value\);) Tj
+T* (            caixaCursos.insertBefore\(novoCurso, cursoSelecionado\)) Tj
+T* (        } else {) Tj
+T* (            alert\("Digite o nome do curso!"\)) Tj
+T* (        }) Tj
+T* (    } catch \(ex\) {) Tj
+T* (        alert\("Selecione um curso"\)) Tj
+T* (    }) Tj
+T* (    salvarTarefas\(\)) Tj
+T* (}\);) Tj
+T* () Tj
+T* (btnAdicionarDepois.addEventListener\("click", \(evt\) => {) Tj
+T* (    const rs = radioSelecionado\(\);) Tj
+T* (    try {) Tj
+T* (        if \(nomeCurso.value != ""\) {) Tj
+T* (            const cursoSelecionado = rs.parentNode.parentNode;) Tj
+T* (            const novoCurso = criarNovoCurso\(nomeCurso.value\);) Tj
+T* (            caixaCursos.insertBefore\(novoCurso, cursoSelecionado.nextSibling\)) Tj
+T* (        } else {) Tj
+T* (            alert\("Digite o nome do curso!"\)) Tj
+T* () Tj
+T* () Tj
+T* (Human:) Tj
+T* (vc n concluiu o codigo) Tj
+T* () Tj
+T* (AI:) Tj
+T* (Desculpe, me equivoquei. Aqui está o código corrigido:javascriptCopy) Tj
+T* (codeconst cursos = [];) Tj
+T* (const caixaCursos = document.querySelector\("#caixaCursos"\);) Tj
+T* (const btnAdicionarAntes =) Tj
+T* (document.getElementById\("btnAdicionarNovoCurso"\);) Tj
+T* (const btnAdicionarDepois =) Tj
+T* (document.getElementById\("btnAdicionarDepois"\);) Tj
+T* (const btnCursoSelecionado =) Tj
+T* (document.getElementById\("btnCursoSelecionado"\);) Tj
+T* (const btnRemoverCurso = document.getElementById\("btnRemoverCurso"\);) Tj
+T* () Tj
+T* (const nomeCurso = document.querySelector\("#nomeCurso"\);) Tj
+T* (cursos.push\("Inicio" + nomeCurso.value\);) Tj
+T* () Tj
+T* (let indice = 0;) Tj
+T* () Tj
+T* (const criarNovoCurso = \(curso\) => {) Tj
+T* (    indice++; // faz o id do novoElemento ser diferente um do outro) Tj
+T* (    const novoElemento = document.createElement\("div"\);) Tj
+T* (    novoElemento.setAttribute\("id", "c" + indice\);) Tj
+T* (    novoElemento.setAttribute\("class", "curso c1"\);) Tj
+T* (    novoElemento.innerHTML = curso;) Tj
+T* (    caixaCursos.appendChild\(novoElemento\);) Tj
+T* () Tj
+T* (    const comandos = document.createElement\("div"\);) Tj
+T* (    comandos.setAttribute\("class", "comandos"\);) Tj
+T* (    novoElemento.appendChild\(comandos\);) Tj
+T* () Tj
+T* (    const rb = document.createElement\("input"\); // cria o input radio) Tj
+T* (    rb.setAttribute\("type", "radio"\);) Tj
+T* (   ) Tj
+T* () Tj
+T* () Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.5.1)
+/CreationDate (D:20230425225259-03'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000017810 00000 n 
+0000019627 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000017867 00000 n 
+0000017992 00000 n 
+0000018122 00000 n 
+0000018255 00000 n 
+0000018392 00000 n 
+0000018515 00000 n 
+0000018644 00000 n 
+0000018776 00000 n 
+0000018912 00000 n 
+0000019040 00000 n 
+0000019167 00000 n 
+0000019296 00000 n 
+0000019429 00000 n 
+0000019531 00000 n 
+0000019875 00000 n 
+0000019961 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <8AC145FDAFB74FB17BC86130CDE7779E> <8AC145FDAFB74FB17BC86130CDE7779E> ]
+>>
+startxref
+20065
+%%EOF
